@@ -34,7 +34,7 @@ main {
         color: #ffffff;  
     }
     .parte2 {
-        color: #51269c;
+        color: #00d008;
     }
     .down {
         color: #ffffff;
@@ -43,17 +43,35 @@ main {
     }
     .input-area {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #ffffff;
-        width: 35%;
-        height: 50px;
-        border-radius: 10px;
-        margin: 10px;
+        width: min(100%, 500px);
         padding: 10px;
+        justify-content: center;
+        align-items: center;
     }
-    textarea {
-
+    input {
+        font-size: 15px;
+        background: #ffffff;
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        margin-right: 15px;
+    }
+    input:focus {
+        outline: 2px solid #00d008;
+    }
+    button {
+        font-size: 15px;
+        background: #00d008;
+        width: 25%;
+        padding: 4px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: #00ff00;
     }
 }
 
