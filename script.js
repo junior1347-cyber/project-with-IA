@@ -1,5 +1,3 @@
-let endereco = ""
-
 async function gerarCodigo(){
 	let promptTexto = document.querySelector("#prompt-usuario").value
 
@@ -7,14 +5,18 @@ async function gerarCodigo(){
 		method: "POST",
 		headers: {
 			"Content-Type" : "application/json",
-			"Authorization" : "Bearer"
+			"Authorization" : `Bearer 
 	},
 		body: JSON.stringify({
 			"model": "openai/gpt-oss-120b",
 			"messages": [
 				{
 					"role": "user",
-					"content" : `Você é um designer web premiado e Programador. 
+					"content" : prompt-usuario
+				},
+				{
+					"role" : "system",
+					"content" : "`Você é um designer web premiado e Programador. 
 Crie uma landing page COMPLETA e VISUALMENTE IMPRESSIONANTE para o negócio descrito.
 
                     Regras de resposta:
@@ -35,11 +37,7 @@ Crie uma landing page COMPLETA e VISUALMENTE IMPRESSIONANTE para o negócio desc
                     - Depoimento de cliente
                     - Footer com contato
 
-Todo o conteúdo em português, criativo e específico para o negócio.`
-				},
-				{
-					"role" : "system",
-					"content" : "promptIa"
+Todo o conteúdo em português, criativo e específico para o negócio.`"
 				}
 			],
 		})
