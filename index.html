@@ -11,8 +11,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js" defer></script>
     </head>
+    <body>
  	<header>
 		<p class="top">Gerar.com - Seu gerador com inteligência artificial 🤖</p>
 	</header>
@@ -25,12 +25,15 @@
 		<p class="down">Descreva o seu negócio e veja a IA criar uma página profissional em segundos</p>
 		<div class="input-area" id="gerador">
 			<input type="text" id="prompt-usuario" placeholder="No que você está pensando?"/>
-			<button type="submit">Gerar Página</button>
+			<button onclick="gerarCodigo()">Gerar Página</button>
 		</div>
 			<div class="code-area">
-				<p class="bloco-codigo"></p>
-				<iframe id="preview-site" class="bloco-site" sandbox"allow-scripts"></iframe>
+				<p class="bloco-codigo" id="resultado"></p>
+				<iframe id="preview-site" class="bloco-site" sandbox="allow-scripts"></iframe>
 			</div>
 	</main>
     </body>
+	<script src="script.js" defer>
+
+	</script>
 </html>

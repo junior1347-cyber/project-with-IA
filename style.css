@@ -1,116 +1,118 @@
 * {
-    /*background: #fff;*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 } 
 body {
-    font-family: "Geist Pixel", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:"ELSH" 0;
-    background: #000000
+	font-family: "Geist Pixel", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:"ELSH" 0;
+	background: #000000;
 }
 header {
-    .top {
-        margin: 10px ;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        color: #ffffff;
-    }
+	.top {
+		margin: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #ffffff;
+	}
 }
 main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    .titulo {
-        text-align: center;
-        margin: 20px 0;
-        line-height: 1.2;
-    }
-    .parte1 {
-        color: #ffffff;  
-    }
-    .parte2 {
-        color: #00d008;
-    }
-    .down {
-        color: #ffffff;
-        text-align: center;
-        margin: 20px;
-    }
-   .input-area {
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-    input {
-        font-size: 15px;
-        background: #ffffff;
-        width: 100%;
-        padding: 12px;
-        border-radius: 10px;
-        border: none;
-        margin-right: 15px;
-    }
-    input:focus {
-        outline: 2px solid #00d008;
-    }
-    button {
-        font-size: 15px;
-        background: #00d008;
-        width: 25%;
-        padding: 4px;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.1s ease;
-    }
-    button:hover {
-        background-color: #00ff00;
-    }
-    button:active {
-        box-shadow: 0 0 1px 3px #00d008;
-        transform: scale(0.95);
-    }
-    .code-area {
-        width: 95%;
-        max-width: 1400px;
-        min-height: 550px;
-        display: flex;
-        padding: 10px;
-        margin-top: 40px;
-        background: #111114;
-        border-radius: 12px;
-        border: 1px solid #27272a;
-        gap: 24px;
-    }
-    .bloco-codigo {
-        font-size: 12px;
-        font-family: "Geist Pixel", sans-serif;
-        font-weight: 400;
-        font-variation-settings: "ELSH" 0;
-        color: #00d008;
-        width: 30%;
-        flex-shrink: 0%;
-        background: #27272a;
-        padding: 16px;
-        border-radius: 12px;
-        border: 1px solid #27272a;
-        white-space: pre-wrap;
-        overflow-y: auto;
-    	max-height: 600px;
-    }
-    .bloco-site {
-        width: 100%;
-    	min-height: 500px;
-        background: #1e1e1e;
-        border-radius: 12px;
-        border: 1px solid #1e1e1e;
-    }
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.titulo {
+		text-align: center;
+		margin: 20px 0;
+		line-height: 1.2;
+	}
+	.parte1 {
+		color: #ffffff;  
+	}
+	.parte2 {
+		color: #00d008;
+	}
+	.down {
+		color: #ffffff;
+		text-align: center;
+		margin: 20px;
+	}
+	.input-area {
+		display: flex;
+		padding: 10px;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 600px;
+	}
+	input {
+		flex-grow: 1;
+		font-size: 15px;
+		background: #ffffff;
+		width: 100%;
+		padding: 12px;
+		border-radius: 10px;
+		border: none;
+		margin-right: 15px;
+	}
+	input:focus {
+		outline: 2px solid #00d008;
+	}
+	button {
+		font-size: 15px;
+		background: #00d008;
+		width: auto;
+		padding: 4px;
+		border-radius: 10px;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.1s ease;
+	}
+	button:hover {
+		background-color: #00ff00;
+	}
+	button:active {
+		box-shadow: 0 0 1px 3px #00d008;
+		transform: scale(0.95);
+	}
+	.code-area {
+		width: 95%;
+		max-width: 1400px;
+		min-height: 550px;
+		display: flex;
+		padding: 10px;
+		margin-top: 40px;
+		background: #111114;
+		border-radius: 12px;
+		border: 1px solid #27272a;
+		gap: 24px;
+	}
+	.bloco-codigo {
+		font-size: 12px;
+		font-family: "Geist Pixel", sans-serif;
+		font-weight: 400;
+		font-variation-settings: "ELSH" 0;
+		color: #00d008;
+		width: 50%;
+		flex-shrink: 0%;
+		background: #27272a;
+		padding: 16px;
+		border-radius: 12px;
+		border: 1px solid #27272a;
+		white-space: pre-wrap;
+		overflow-y: auto;
+		scrollbar-color: #888 #f1f1f1;
+		max-height: 600px;
+	}
+	.bloco-site {
+		width: 100%;
+		min-height: 500px;
+		background: #1e1e1e;
+		border-radius: 12px;
+		border: 1px solid #1e1e1e;
+	}
 }

@@ -1,4 +1,7 @@
 node_modules/
 venv/
 *.swp
-
+*.json
+*.env
+*.json
+node_modules/
